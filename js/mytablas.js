@@ -1,9 +1,10 @@
 
+import metodos from "./metodos.js";
 function  QueryOptions() {
-    const optionsTB = document.querySelectorall(".boards");
+    const optionsTB = document.querySelectorAll(".boards");
     optionsTB.forEach(option => option.addEventListener("click", (event) => {
         const optionId = event.currentTarget.id;
-        console.log(optionId);
+        metodos.getData(optionId);
     }));
 }
 

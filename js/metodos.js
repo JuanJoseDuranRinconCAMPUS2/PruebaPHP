@@ -5,6 +5,7 @@ const URLTB = url.replace('/index.html', '/uploads');
 
 async function getData(option) {
     const url = `${URLTB}/${option}`;
+    console.log(url);
     fetch(url)
     .then(response => response.json())
     .then(data => {console.log(data);})
