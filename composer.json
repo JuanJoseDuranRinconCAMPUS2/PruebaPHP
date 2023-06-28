@@ -3,7 +3,14 @@
     "description": "Comporser para la creacion de rutas y coneccion de archivos para el manejo de cruds",
     "autoload": {
         "psr-4": {
-            "Juanj\\PruebaPhp\\": "src/"
+            "App\\": [
+                "./scripts",
+                "./scripts/db",
+                "./scripts/campers",
+                "./scripts/departamento",
+                "./scripts/pais",
+                "./scripts/region"
+            ]
         }
     },
     "authors": [
